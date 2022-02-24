@@ -8,6 +8,9 @@ export default function Header() {
 				<a href="#x" className="link">
 					단어추가
 				</a>
+				<a href="#x" className="link">
+					Day 추가
+				</a>
 			</div>
 		</div>
 	);
