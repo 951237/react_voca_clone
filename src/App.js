@@ -1,7 +1,7 @@
 import Header from "./component/Header";    // 헤더 부분 컨포넌트 불러오기
 import DayList from "./component/DayList";  // 데이리스트 컨포넌트 불러오기
 import Day from "./component/Day";    // 데이 컨포넌트 불러오기
-import {BrowserRouter, Route, Switch} from "react-router-dom"; // 브라우저 라우터 불러오기
+import {BrowserRouter, Route, Routes} from "react-router-dom"; // 브라우저 라우터 불러오기
 
 function App() {
   return (
@@ -11,14 +11,14 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Header />    
-        <Switch>
+        <Routes>
           <Route exact path="/">
             <DayList />
           </Route>
           <Route path="/day">
             <Day />
           </Route>
-        </Switch>
+        </Routes>
       </div>
     </BrowserRouter>
   );
