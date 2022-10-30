@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 import dummy from "../db/data.json";
 
 export default function DayList() {
@@ -7,7 +7,7 @@ export default function DayList() {
 		<ul className="list_day">
 			{dummy.days.map(day => (
 				<li key={day.id}>
-					<Link to="/day">Day {day.day}</Link>
+					Day {day.day}
 				</li>
 			))}
 		</ul>
